@@ -1,0 +1,120 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  color: var(--tertiary-text-color);
+  background-color: var(--secondary-bg-color);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__left {
+  width: 231px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--tertiary-text-color);
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.address__contact {
+  display: inline-block;
+  margin-top: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__social {
+  margin-left: 70px;
+}
+
+.footer__form {
+  margin-left: 93px;
+  margin-right: 0;
+}
+
+.footer-form__field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-form__input {
+  margin-right: 12px;
+  padding: 15px 16px;
+
+  width: 358px;
+  height: 50px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  background-color: transparent;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--tertiary-text-color);
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-form__button {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 29px;
+  width: 200px;
+  height: 50px;
+
+  border-radius: 4px;
+  border-color: transparent;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+.footer-form__button-text {
+  margin-right: 10px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--tertiary-text-color);
+}
