@@ -7,12 +7,32 @@
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  outline: 1px solid tomato;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer__left {
   width: 231px;
+  outline: 1px solid yellowgreen;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
 }
 
 .footer__logo {
@@ -30,7 +50,7 @@
 
 .address__contact {
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 8px;
 
   color: rgba(255, 255, 255, 0.6);
 
@@ -40,28 +60,60 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 9px;
+  }
 }
 
 .footer__social {
-  margin-left: 70px;
+  width: 206px;
+  outline: 1px solid yellowgreen;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+  }
 }
 
 .footer__form {
-  margin-left: 93px;
-  margin-right: 0;
+  outline: 1px solid yellowgreen;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+    margin-right: 0;
+  }
 }
 
 .footer-form__field {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .footer-form__input {
-  margin-right: 12px;
   padding: 15px 16px;
 
-  width: 358px;
+  width: 450px;
   height: 50px;
 
   border-radius: 4px;
@@ -81,6 +133,15 @@
     line-height: 1.25;
 
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 12px;
+    width: 358px;
   }
 }
 

@@ -21,6 +21,13 @@
           <span lang="en"><span class="logo--accent">Web</span>Studio</span>
         </a>
         
+        <button type="button" class="menu-btn is-open" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="menu-btn__burger" href="./images/icons.svg#icon-menu"></use>
+            <use class="menu-btn__cross" href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+
         <nav>
           <ul class="site-nav">
             <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студия</a></li>
@@ -62,41 +69,41 @@
         <h2 class="visually-hidden">Преимущества</h2>
 
         <ul class="features__list">
-          <li>
+          <li class="features__item">
             <div class="features__icon-thumb">
               <svg class="features__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-antenna_c"></use>
               </svg>
             </div>
             <h3 class="features__name subtitle">Внимание к деталям</h3>
-            <p class="features__description">Идейные соображения, а также <br> начало повседневной работы по <br> формированию позиции.</p>
+            <p class="features__description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
-          <li>
+          <li class="features__item">
             <div class="features__icon-thumb">
               <svg class="features__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-clock_c"></use>
               </svg>
             </div>
             <h3 class="features__name subtitle">Пунктуальность</h3>
-            <p class="features__description">Задача организации, в особенности <br> же рамки и место обучения кадров <br> влечет за собой.</p>
+            <p class="features__description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
           </li>
-          <li>
+          <li class="features__item">
             <div class="features__icon-thumb">
               <svg class="features__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-diagram_c"></use>
               </svg>
             </div>
             <h3 class="features__name subtitle">Планирование</h3>
-            <p class="features__description">Равным образом консультация с <br> широким активом в значительной <br> степени обуславливает.</p>
+            <p class="features__description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
           </li>
-          <li>
+          <li class="features__item">
             <div class="features__icon-thumb">
               <svg class="features__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-astronaut_c"></use>
               </svg>
             </div>
             <h3 class="features__name subtitle">Современные технологии</h3>
-            <p class="features__description">Значимость этих проблем настолько <br> очевидна, что реализация плановых <br> заданий.</p>
+            <p class="features__description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
         </ul>
         </div>
@@ -459,6 +466,7 @@
       </div>
     </div>
 
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
