@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
 
-  width: 448px;
+  width: 370px;
+
+  @media screen and (min-width: $desktop) {
+    width: 448px;
+  }
 }
 
 .form-modal__title {
@@ -94,25 +98,38 @@
 
 .policies {
   position: relative;
+  //outline: 1px solid tomato;
 
-  margin-bottom: 30px;
+  margin-bottom: 31px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
 }
 
 .policies__label {
-  padding-left: 37px;
+  padding-left: 20px;
+  //outline: 1px solid teal;
 
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--secondary-text-color);
 
   cursor: pointer;
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 37px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .policies__checkbox {
   position: absolute;
   top: 50%;
-  left: 12px;
-  transform: translateY(-55%);
+  left: 0;
+
+  transform: translateY(-45%);
 
   width: 16px;
   height: 15px;
@@ -124,6 +141,12 @@
 
   .policies__input:checked + & {
     background-image: url(../images/icon-checked_c.svg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 50%;
+    left: 12px;
+    transform: translateY(-55%);
   }
 }
 

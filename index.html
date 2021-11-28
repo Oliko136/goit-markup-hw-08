@@ -20,13 +20,46 @@
         <a href="./index.html" class="logo header__logo">
           <span lang="en"><span class="logo--accent">Web</span>Studio</span>
         </a>
-        
-        <button type="button" class="menu-btn is-open" data-menu-button>
+       <!-- START MOBILE MENU --> 
+        <button type="button" class="menu-btn-burger" data-menu-open>
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="menu-btn__burger" href="./images/icons.svg#icon-menu"></use>
-            <use class="menu-btn__cross" href="./images/icons.svg#icon-menu-close"></use>
+            <use href="./images/icons.svg#icon-menu" class="menu-btn-burger__icon"></use>
           </svg>
         </button>
+
+        <div class="menu is-open" data-menu>
+          <button type="button" class="menu-btn-cross" data-menu-close>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use href="./images/icons.svg#icon-menu-close" class="menu-btn-cross__icon"></use>
+            </svg>
+          </button>
+        
+
+            <ul>
+              <li class=""><a href="./index.html" class="">Студия</a></li>
+              <li class=""><a href="./portfolio.html" class="">Портфолио</a></li>
+              <li class=""><a href="" class="">Контакты</a></li>
+            </ul>
+
+            <ul>
+              <li class="">
+                <a href="mailto:info@devstudio.com" class="">
+                  info@devstudio.com</a>
+              </li>
+              <li class="">
+                <a href="tel:+380961111111" class="">
+                  +38 096 111 11 11</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">LinkedIn</a></li>
+            </ul>
+        </div>
+        <!-- END MOBILE MENU-->
 
         <nav>
           <ul class="site-nav">
@@ -466,7 +499,7 @@
       </div>
     </div>
 
-    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
