@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Студия</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,29 +35,32 @@
           </button>
         
 
-            <ul>
-              <li class=""><a href="./index.html" class="">Студия</a></li>
-              <li class=""><a href="./portfolio.html" class="">Портфолио</a></li>
-              <li class=""><a href="" class="">Контакты</a></li>
+            <ul class="menu-nav">
+              <li class="menu-nav__item"><a href="./index.html" class="menu-nav__link current">Студия</a></li>
+              <li class="menu-nav__item"><a href="./portfolio.html" class="menu-nav__link">Портфолио</a></li>
+              <li class="menu-nav__item"><a href="" class="menu-nav__link">Контакты</a></li>
             </ul>
 
-            <ul>
-              <li class="">
-                <a href="mailto:info@devstudio.com" class="">
-                  info@devstudio.com</a>
-              </li>
-              <li class="">
-                <a href="tel:+380961111111" class="">
-                  +38 096 111 11 11</a>
-              </li>
-            </ul>
+            <div class="menu__thumb">
+              <ul class="menu-contacts">
+                <li class="menu-contacts__item">
+                  <a href="tel:+380961111111" class="menu-contacts__tel">
+                    +38 096 111 11 11</a>
+                </li>
+                <li class="menu-contacts__item">
+                  <a href="mailto:info@devstudio.com" class="menu-contacts__mail">
+                    info@devstudio.com</a>
+                </li>
+              </ul>
+            
 
-            <ul>
-              <li><a href="">Instagram</a></li>
-              <li><a href="">Facebook</a></li>
-              <li><a href="">Twitter</a></li>
-              <li><a href="">LinkedIn</a></li>
-            </ul>
+              <ul class="menu-social">
+                <li class="menu-social__item"><a href="" class="menu-social__link">Instagram</a></li>
+                <li class="menu-social__item"><a href="" class="menu-social__link">Facebook</a></li>
+                <li class="menu-social__item"><a href="" class="menu-social__link">Twitter</a></li>
+                <li class="menu-social__item"><a href="" class="menu-social__link">LinkedIn</a></li>
+              </ul>
+            </div>
         </div>
         <!-- END MOBILE MENU-->
 
@@ -430,7 +433,7 @@
       <form class="footer__form footer-form">
         <h3 class="footer-form__title subtitle subtitle--white">Подпишитесь на рассылку</h3>
         <div class="footer-form__field">
-        <label name="email">
+        <label name="email" class="footer-form__label">
         <input type="email" placeholder="E-mail" name="email" class="footer-form__input">
         </label>
         <button type="submit" class="footer-form__button">

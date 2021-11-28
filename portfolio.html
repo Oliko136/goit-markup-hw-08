@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Портфолио</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +20,50 @@
             <a href="./index.html" class="logo header__logo">
              <span lang="en"><span class="logo--accent">Web</span>Studio</span>
             </a>
+
+            <!-- START MOBILE MENU -->
+            <button type="button" class="menu-btn-burger" data-menu-open>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use href="./images/icons.svg#icon-menu" class="menu-btn-burger__icon"></use>
+                </svg>
+            </button>
+            
+            <div class="menu is-open" data-menu>
+                <button type="button" class="menu-btn-cross" data-menu-close>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use href="./images/icons.svg#icon-menu-close" class="menu-btn-cross__icon"></use>
+                    </svg>
+                </button>
+            
+            
+                <ul class="menu-nav">
+                    <li class="menu-nav__item"><a href="./index.html" class="menu-nav__link">Студия</a></li>
+                    <li class="menu-nav__item"><a href="./portfolio.html" class="menu-nav__link current">Портфолио</a></li>
+                    <li class="menu-nav__item"><a href="" class="menu-nav__link">Контакты</a></li>
+                </ul>
+            
+                <div class="menu__thumb">
+                    <ul class="menu-contacts">
+                        <li class="menu-contacts__item">
+                            <a href="tel:+380961111111" class="menu-contacts__tel">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="menu-contacts__item">
+                            <a href="mailto:info@devstudio.com" class="menu-contacts__mail">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+            
+            
+                    <ul class="menu-social">
+                        <li class="menu-social__item"><a href="" class="menu-social__link">Instagram</a></li>
+                        <li class="menu-social__item"><a href="" class="menu-social__link">Facebook</a></li>
+                        <li class="menu-social__item"><a href="" class="menu-social__link">Twitter</a></li>
+                        <li class="menu-social__item"><a href="" class="menu-social__link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END MOBILE MENU-->
         
             <nav>
                 <ul class="site-nav">
@@ -279,7 +323,7 @@
         <form class="footer__form footer-form">
             <h3 class="footer-form__title subtitle subtitle--white">Подпишитесь на рассылку</h3>
             <div class="footer-form__field">
-                <label name="email">
+                <label name="email" class="footer-form__label">
                     <input type="email" placeholder="E-mail" name="email" class="footer-form__input">
                 </label>
                 <button type="submit" class="footer-form__button">
@@ -292,6 +336,8 @@
         </form>
     </div>
   </footer>
+
+    <script src="./js/menu.js"></script>
 
 </body>
 </html>

@@ -13,10 +13,14 @@
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
 
   color: var(--primary-text-color);
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;
+  }
 }
 
 .form-modal__label {
@@ -98,7 +102,6 @@
 
 .policies {
   position: relative;
-  //outline: 1px solid tomato;
 
   margin-bottom: 31px;
 
@@ -109,7 +112,6 @@
 
 .policies__label {
   padding-left: 20px;
-  //outline: 1px solid teal;
 
   font-size: 12px;
   line-height: 1.17;
