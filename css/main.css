@@ -348,7 +348,7 @@ img {
   .policies__checkbox {
     top: 50%;
     left: 12px;
-    transform: translateY(-55%);
+    transform: translateY(-47%);
   }
 }
 
@@ -1010,6 +1010,22 @@ img {
 @media screen and (min-width: 1200px) {
   .team__card {
     width: 270px;
+  }
+}
+
+.team__thumb {
+  height: 460px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__thumb {
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__thumb {
+    height: 260px;
   }
 }
 

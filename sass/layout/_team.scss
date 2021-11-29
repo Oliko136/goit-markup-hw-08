@@ -42,6 +42,18 @@
   }
 }
 
+.team__thumb {
+  height: 460px;
+
+  @media screen and (min-width: $tablet) {
+    height: 374px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 260px;
+  }
+}
+
 .team__text {
   padding-top: 30px;
   padding-bottom: 24px;
